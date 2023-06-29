@@ -23,13 +23,13 @@ spring:
     oauth2:
       client:
         registration:
-          google:
-            client-id: <client-id>
-            client-secret: <client-secret>
-            scope:
-              - email
-              - openid
-              - profile
+          # google:
+            # client-id: <client-id>
+            # client-secret: <client-secret>
+            # scope:
+            #   - email
+            #   - openid
+            #   - profile
           okta:
             client-id: <client-id>
             client-secret: <client-secret>
