@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @RequestMapping("/okta")
-public class NetmanApplication {
+public class OktaOauth {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NetmanApplication.class, args);
+		SpringApplication.run(OktaOauth.class, args);
 	}
 
 	@GetMapping("movies")

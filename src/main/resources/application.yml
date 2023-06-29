@@ -24,22 +24,22 @@ spring:
       client:
         registration:
           google:
-            client-id: 607795509178-hepl5hch2l00d3igftdbcs6e5vkiip7k.apps.googleusercontent.com
-            client-secret: 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
+            client-id: <client-id>
+            client-secret: <client-secret>
             scope:
               - email
               - openid
               - profile
           okta:
-            client-id: 0oaa291221aCE68cd5d7
-            client-secret: 1mWNHtpaBGu52QNlDuM2JLc5JVuCOBL611_lGCu-
+            client-id: <client-id>
+            client-secret: <client-secret>
         provider:
           okta:
-            authorization-uri: https://dev-34251156.okta.com/oauth2/default/v1/authorize
-            token-uri: https://dev-34251156.okta.com/oauth2/default/v1/token
-            user-info-uri: https://dev-34251156.okta.com/oauth2/default/v1/userinfo
-            jwk-set-uri: https://dev-34251156.okta.com/oauth2/default/v1/keys
-            issuer-uri: https://dev-34251156.okta.com/oauth2/default
+            authorization-uri: https://{uri}/oauth2/default/v1/authorize
+            token-uri: https://{uri}/oauth2/default/v1/token
+            user-info-uri: https://{uri}/oauth2/default/v1/userinfo
+            jwk-set-uri: https://{uri}/oauth2/default/v1/keys
+            issuer-uri: https://{uri}/oauth2/default
 
           google:
             issuer-uri: https://accounts.google.com
@@ -47,8 +47,8 @@ spring:
 
 okta:
   oauth2:
-    issuer: https://dev-34251156.okta.com/oauth2/default
-    clientId: 0oaa291221aCE68cd5d7
-    clientSecret: 1mWNHtpaBGu52QNlDuM2JLc5JVuCOBL611_lGCu-
+    issuer: https://{uri}/oauth2/default
+    clientId: <client-id>
+    clientSecret: <client-secret>
     audience: api://default
-    groupsClaim: groups
+    groupsClaim: <group-name>
